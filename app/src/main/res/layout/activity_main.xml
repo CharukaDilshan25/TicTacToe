@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:background="@drawable/bg12"
+
+    android:outlineAmbientShadowColor="#CDA15B"
+    tools:context=".MainActivity">
+
+    <TextView
+
+        android:id="@+id/texttitle"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+
+        android:fontFamily="cursive"
+
+        android:text="Tic Tac Toe"
+
+        android:textColor="#cc1234"
+
+        android:textSize="50dp"
+
+        android:textStyle="bold"
+
+        />
+
+    <RelativeLayout
+
+        android:id="@+id/relative_layout"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/texttitle"
+
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginBottom="20dp">
+
+
+        <TextView
+
+            android:id="@+id/text_player1"
+
+            android:layout_width="200dp"
+
+            android:layout_height="wrap_content"
+
+
+            android:fontFamily="sans-serif-smallcaps"
+
+            android:text="Player-1 name"
+
+            android:textAlignment="center"
+
+            android:textColor="@color/white"
+
+            android:textSize="26dp"
+            android:textStyle="bold" />
+
+        <TextView
+
+            android:id="@+id/text_player2"
+
+            android:layout_width="200dp"
+
+            android:layout_height="wrap_content"
+
+            android:layout_toRightOf="@id/text_player1"
+
+            android:fontFamily="sans-serif-smallcaps"
+
+            android:text="Player-2 name "
+
+            android:textAlignment="center"
+
+            android:textColor="@color/white"
+
+
+            android:textSize="26dp"
+
+            android:textStyle="bold" />
+
+        <TextView
+
+            android:id="@+id/score_Player1"
+
+            android:layout_width="200dp"
+
+            android:layout_height="wrap_content"
+
+
+            android:layout_below="@id/text_player1"
+
+            android:fontFamily="sans-serif-smallcaps"
+
+            android:text="0"
+
+            android:textAlignment="center"
+
+            android:textColor="@color/white"
+
+            android:textSize="26dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+
+            android:id="@+id/score_Player2"
+
+            android:layout_width="200dp"
+
+            android:layout_height="wrap_content"
+
+
+            android:layout_below="@id/text_player2"
+
+            android:layout_toRightOf="@id/score_Player1"
+
+            android:fontFamily="sans-serif-smallcaps"
+
+            android:text="0"
+
+            android:textAlignment="center"
+
+            android:textColor="@color/white"
+
+            android:textSize="26dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+
+        android:id="@+id/layout_linear"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="284dp"
+
+        android:layout_below="@id/relative_layout"
+
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="33dp"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+
+            >
+
+            <Button
+
+                android:id="@+id/btn0"
+
+                android:layout_width="90dp"
+
+                android:layout_height="90dp"
+
+                android:layout_marginHorizontal="5dp"
+
+                android:layout_marginBottom="1.25dp"
+
+                android:backgroundTint="#CC5C4D"
+                android:textSize="26dp" />
+
+            <Button
+
+                android:id="@+id/btn1"
+
+                android:layout_width="90dp"
+
+                android:layout_height="90dp"
+
+                android:layout_marginHorizontal="5dp"
+
+                android:layout_marginBottom="1.25dp"
+
+                android:backgroundTint="#CC5C4D"
+                android:textSize="26dp" />
+
+            <Button
+
+                android:id="@+id/btn2"
+
+                android:layout_width="90dp"
+
+                android:layout_height="90dp"
+
+                android:layout_marginHorizontal="5dp"
+
+                android:layout_marginBottom="1.25dp"
+
+                android:backgroundTint="#CC5C4D"
+                android:textSize="26dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+
+            >
+
+            <Button
+
+                android:id="@+id/btn3"
+
+                android:layout_width="90dp"
+
+                android:layout_height="90dp"
+
+                android:layout_marginHorizontal="5dp"
+
+                android:layout_marginBottom="1.25dp"
+
+                android:backgroundTint="#CC5C4D"
+                android:textSize="26dp" />
+
+            <Button
+
+                android:id="@+id/btn4"
+
+                android:layout_width="90dp"
+
+                android:layout_height="90dp"
+
+                android:layout_marginHorizontal="5dp"
+
+                android:layout_marginBottom="1.25dp"
+
+                android:backgroundTint="#CC5C4D"
+                android:textSize="26dp" />
+
+            <Button
+
+                android:id="@+id/btn5"
+
+                android:layout_width="90dp"
+
+                android:layout_height="90dp"
+
+                android:layout_marginHorizontal="5dp"
+
+                android:layout_marginBottom="1.25dp"
+
+                android:backgroundTint="#CC5C4D"
+                android:textSize="26dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+
+            >
+
+            <Button
+
+                android:id="@+id/btn6"
+
+                android:layout_width="90dp"
+
+                android:layout_height="90dp"
+
+                android:layout_marginHorizontal="5dp"
+
+                android:layout_marginBottom="1.25dp"
+
+                android:backgroundTint="#CC5C4D"
+                android:textSize="26dp" />
+
+            <Button
+
+                android:id="@+id/btn7"
+
+                android:layout_width="90dp"
+
+                android:layout_height="90dp"
+
+                android:layout_marginHorizontal="5dp"
+
+                android:layout_marginBottom="1.25dp"
+
+                android:backgroundTint="#CC5C4D"
+                android:textSize="26dp" />
+
+            <Button
+
+                android:id="@+id/btn8"
+
+                android:layout_width="90dp"
+
+                android:layout_height="90dp"
+
+                android:layout_marginHorizontal="5dp"
+
+                android:layout_marginBottom="1.25dp"
+
+                android:backgroundTint="#CC5C4D"
+                android:textSize="26dp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+
+        android:id="@+id/textStatus"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="55dp"
+
+        android:layout_below="@id/layout_linear"
+
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentEnd="true"
+
+
+        android:layout_marginStart="-1dp"
+
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="1dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:text="Status"
+        android:textColor="@color/white"
+        android:textSize="26dp" />
+
+
+    <TextView
+        android:id="@+id/highest_score"
+        android:layout_width="131dp"
+        android:layout_height="44dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="200dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#F1EEEE" />
+
+    <Button
+
+        android:id="@+id/btn_reset"
+
+        android:layout_width="200dp"
+
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentEnd="true"
+
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="224dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="#cc1234"
+        android:text="Reset Game"
+        android:textSize="26dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="111dp"
+        android:layout_marginEnd="114dp"
+        android:layout_marginBottom="121dp"
+        android:backgroundTint="#ffbb00"
+        android:text="Play Again"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

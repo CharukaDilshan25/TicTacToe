@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">NewGame</string>
+    <string name="highest_score_label">Highest Score: %d</string>
+</resources>
